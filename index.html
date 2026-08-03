@@ -529,14 +529,14 @@
     <div class="about-text reveal">
       <p>I'm <strong>Kunal Aggarwal</strong>, a final-year CS undergrad at VIT Bhopal who builds and breaks language models for a living (well, for an internship). Currently working as an <strong>AI Model Analyst at Deccan AI Experts</strong>, where I dig into LLM outputs, run RLHF cycles, and chase down hallucinations like they owe me money.</p>
       <p>I build AI things. Mostly I just try to understand <strong>why they break.</strong> My focus is on <strong>agentic AI systems</strong>, multi-step LLM pipelines, tool-calling agents, and retrieval-augmented generation. Real time with <strong>LangChain, LangGraph, smolagents, and Google ADK</strong>. I care about systems that actually work, not just notebooks that run clean.</p>
-      <p>Outside of AI, I build full-stack products with Flask and MySQL, spend too much time on LeetCode, and have opinions about prompt engineering I'll share if you ask.</p>
+      <p>Outside of core AI work, I build full-stack products — FastAPI backends, Next.js frontends, Docker containers, CI/CD pipelines. I spend too much time on LeetCode, and have opinions about prompt engineering I'll share if you ask.</p>
       <div class="about-stats">
         <div class="stat-card reveal">
           <div class="stat-num a1">3+</div>
           <div class="stat-label">months pro experience</div>
         </div>
         <div class="stat-card reveal" style="transition-delay:0.1s">
-          <div class="stat-num a2">11</div>
+          <div class="stat-num a2">12+</div>
           <div class="stat-label">certifications</div>
         </div>
         <div class="stat-card reveal" style="transition-delay:0.2s">
@@ -544,8 +544,8 @@
           <div class="stat-label">error reduction via RLHF</div>
         </div>
         <div class="stat-card reveal" style="transition-delay:0.3s">
-          <div class="stat-num a4">2027</div>
-          <div class="stat-label">B.Tech graduation</div>
+          <div class="stat-num a4">8.5</div>
+          <div class="stat-label">CGPA / 10</div>
         </div>
       </div>
     </div>
@@ -600,27 +600,57 @@
     <!-- Medical QA AI Assistant -->
     <div class="project-card c3 reveal">
       <div class="project-num-row">
-        <div class="project-num">01 / in progress</div>
-        <div class="project-status"><span class="status-dot"></span>building now</div>
+        <div class="project-num">01 / flagship</div>
+        <div class="project-status" style="color:var(--accent1);background:var(--accent1-muted);border-color:rgba(168,224,99,0.25)"><span class="status-dot" style="background:var(--accent1)"></span>live demo</div>
       </div>
-      <div class="project-title">Medical QA AI Assistant<br/><span style="font-size:0.85rem;font-weight:400;color:var(--text-2)">Fine-Tuned Domain LLM</span></div>
-      <p class="project-desc">Fine-tuning Phi-3 Mini (3.8B) with QLoRA on the ChatDoctor-HealthCareMagic-100k dataset to build a domain-specialised medical question-answering model, trained end-to-end on a single RTX 4050. Built around a structured implementation plan with daily progress logs documenting the almost-correct outputs and what they reveal about the model.</p>
+      <div class="project-title">Medical QA AI Assistant<br/><span style="font-size:0.85rem;font-weight:400;color:var(--text-2)">Full-Stack AI Product · Fine-Tuned Domain LLM</span></div>
+      <p class="project-desc">Production-grade medical Q&amp;A system built end-to-end over 10 weeks. Fine-tuned Phi-3 Mini (3.8B) using QLoRA on 100k+ real doctor-patient conversations. Two-pass RAG pipeline: PubMedBERT bi-encoder retrieves from ChromaDB, ms-marco cross-encoder reranks for accuracy. FastAPI backend with JWT auth, rate limiting, and PostgreSQL. Next.js frontend deployed on Netlify. Containerised with Docker, CI/CD via GitHub Actions, data versioning with DVC, test suite with pytest.</p>
       <div class="project-tags">
         <span class="tag tg">Phi-3 Mini</span>
         <span class="tag tg">QLoRA</span>
-        <span class="tag tv">HuggingFace</span>
-        <span class="tag to">PEFT</span>
-        <span class="tag tb">Fine-Tuning</span>
-        <span class="tag tp">RTX 4050</span>
+        <span class="tag tg">PubMedBERT</span>
+        <span class="tag tg">RAG</span>
+        <span class="tag tv">FastAPI</span>
+        <span class="tag tv">Next.js</span>
+        <span class="tag tv">PostgreSQL</span>
+        <span class="tag to">Docker</span>
+        <span class="tag to">GitHub Actions</span>
+        <span class="tag tb">ChromaDB</span>
+        <span class="tag tb">HuggingFace</span>
       </div>
-      <a class="project-link" href="https://github.com/koi-bito/Medical-QA-AI-Assistant" target="_blank">
-        github.com/koi-bito/Medical-QA-AI-Assistant
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:auto">
+        <a class="project-link" href="https://huggingface.co/spaces/koi-bito/medical-qa" target="_blank" style="color:var(--accent1)">
+          ↗ live demo on HuggingFace
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+        <a class="project-link" href="https://github.com/koi-bito/Medical-QA-AI-Assistant" target="_blank">
+          github.com/koi-bito/Medical-QA-AI-Assistant
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+    <!-- HireFlow -->
+    <div class="project-card reveal" style="transition-delay:0.07s">
+      <div class="project-num">02 / featured</div>
+      <div class="project-title">HireFlow<br/><span style="font-size:0.85rem;font-weight:400;color:var(--text-2)">Multi-Agent Recruitment System</span></div>
+      <p class="project-desc">Rebuilt from a Flask/TF-IDF prototype into a production multi-agent system for the Kaggle AI Agents Capstone. A SequentialAgent (Google ADK + LangGraph) orchestrates four specialised LlmAgents: JD Parser, Candidate Matcher, Outreach Composer, and Interview Scheduler. Parses job descriptions, scores candidates via NLP similarity, and automates personalised outreach end-to-end.</p>
+      <div class="project-tags">
+        <span class="tag tg">Google ADK</span>
+        <span class="tag tg">LangGraph</span>
+        <span class="tag tg">Multi-Agent</span>
+        <span class="tag tv">SequentialAgent</span>
+        <span class="tag to">Python</span>
+        <span class="tag tb">NLP</span>
+        <span class="tag tp">Kaggle Capstone</span>
+      </div>
+      <a class="project-link" href="https://github.com/koi-bito/HireFlow" target="_blank">
+        github.com/koi-bito/HireFlow
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
       </a>
     </div>
     <!-- Audio-to-Resume -->
-    <div class="project-card reveal" style="transition-delay:0.07s">
-      <div class="project-num">02 / featured</div>
+    <div class="project-card reveal" style="transition-delay:0.14s">
+      <div class="project-num">03 / featured</div>
       <div class="project-title">Audio-to-Resume<br/><span style="font-size:0.85rem;font-weight:400;color:var(--text-2)">AI-Powered Profile Generator</span></div>
       <p class="project-desc">A LangChain parsing engine that maps natural language speech to structured JSON schemas via embeddings and generative AI, optimised for ATS keyword alignment. Modular async backend integrating OpenAI Whisper for transcription and multi-step LLM pipelines to convert raw audio into formatted, ATS-ready resume documents.</p>
       <div class="project-tags">
@@ -637,8 +667,8 @@
       </a>
     </div>
     <!-- Koimate -->
-    <div class="project-card c2 reveal" style="transition-delay:0.14s">
-      <div class="project-num">03 / featured</div>
+    <div class="project-card c2 reveal" style="transition-delay:0.21s">
+      <div class="project-num">04 / featured</div>
       <div class="project-title">Koimate<br/><span style="font-size:0.85rem;font-weight:400;color:var(--text-2)">AI-Powered E-commerce Recommender</span></div>
       <p class="project-desc">A full-stack e-commerce platform with a hybrid ML recommendation engine under the hood. Engineered TF-IDF + KNN with FULLTEXT search and cached REST API endpoints for personalised product recommendations at scale. Includes secure JWT auth, user behaviour tracking, and Chart.js analytics dashboards.</p>
       <div class="project-tags">
@@ -685,7 +715,7 @@
     <div class="skill-group reveal" style="transition-delay:0.2s">
       <div class="skill-group-title sgt-v">Tools &amp; Technologies</div>
       <div class="skill-chips">
-        <span class="skill-chip">Flask</span><span class="skill-chip">MongoDB</span><span class="skill-chip">MySQL</span><span class="skill-chip">Git / GitHub</span><span class="skill-chip">NumPy</span><span class="skill-chip">Pandas</span><span class="skill-chip">Matplotlib</span><span class="skill-chip">scikit-learn</span>
+        <span class="skill-chip">FastAPI</span><span class="skill-chip">Next.js</span><span class="skill-chip">Flask</span><span class="skill-chip">Docker</span><span class="skill-chip">GitHub Actions</span><span class="skill-chip">ChromaDB</span><span class="skill-chip">PostgreSQL</span><span class="skill-chip">MySQL</span><span class="skill-chip">DVC</span><span class="skill-chip">pytest</span><span class="skill-chip">Git / GitHub</span><span class="skill-chip">NumPy</span><span class="skill-chip">Pandas</span><span class="skill-chip">scikit-learn</span>
       </div>
     </div>
   </div>
