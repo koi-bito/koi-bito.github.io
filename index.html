@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
   <style>
-    /* ─── DARK THEME — forest at midnight ─── */
+    /* ─── DARK THEME, forest at midnight ─── */
     [data-theme="dark"] {
       --bg:        #0f1f16;
       --bg-2:      #152b1e;
@@ -17,7 +17,7 @@
       --border:    rgba(143,188,90,0.09);
       --border-hover: rgba(143,188,90,0.28);
 
-      /* Tender Shoots — primary green glow */
+      /* Tender Shoots, primary green glow */
       --accent1:        #8fbc5a;
       --accent1-d:      #6a9940;
       --accent1-muted:  rgba(143,188,90,0.13);
@@ -28,7 +28,7 @@
       --accent2-d:      #b04e18;
       --accent2-muted:  rgba(212,101,42,0.13);
 
-      /* Winter Pear — muted sage */
+      /* Winter Pear, muted sage */
       --accent3:        #c8c9a0;
       --accent3-d:      #a8a97e;
       --accent3-muted:  rgba(200,201,160,0.13);
@@ -55,7 +55,7 @@
       --toggle-icon-moon: #8b5fbf;
     }
 
-    /* ─── LIGHT THEME — forest clearing at noon ─── */
+    /* ─── LIGHT THEME, forest clearing at noon ─── */
     [data-theme="light"] {
       --bg:        #f5efe0;
       --bg-2:      #ede5cf;
@@ -85,7 +85,7 @@
       --accent4-d:      #8a6408;
       --accent4-muted:  rgba(184,134,11,0.1);
 
-      /* Potting Soil — terracotta */
+      /* Potting Soil, terracotta */
       --accent5:        #8b3a2a;
       --accent5-muted:  rgba(139,58,42,0.1);
 
@@ -420,6 +420,8 @@
       .hero-ctas .btn,.btn-resume{text-align:center;justify-content:center;}
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init("V-wI3772n6LOSmPyq");</script>
 </head>
 <body>
 
@@ -469,7 +471,7 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg-text">AI</div>
-  <div class="hero-status reveal"><span class="status-dot"></span>open to internships &amp; entry-level roles</div>
+  <div class="hero-status reveal"><span class="status-dot"></span>open to new opportunities</div>
   <div class="hero-eyebrow reveal" style="transition-delay:0.1s">Available for AI/ML &amp; Backend Engineering roles</div>
   <h1 class="hero-name reveal" style="transition-delay:0.15s">
     Kunal<br/><span class="line-2">Aggarwal</span>
@@ -487,7 +489,9 @@
   <div class="hero-code reveal" style="transition-delay:0.25s">
     <span class="comment">// CS undergrad @ Vellore Institute of Technology, class of 2027</span><br/>
     <br/>
-    <span class="key">roles</span>      = [<span class="str">"Backend AI Intern @ FlyRank AI"</span>, <span class="str">"AI Analyst @ Deccan AI"</span>]<br/>
+    <span class="key">prev_roles</span> = [<span class="str">"Backend AI Intern @ FlyRank AI"</span>, <span class="str">"SWE Intern @ Urlyte"</span>]<br/>
+    <span class="key">freelance</span>  = <span class="str">"AI Model Analyst @ Deccan AI Experts"</span><br/>
+    <span class="key">status</span>     = <span class="str">"open to roles"</span><br/>
     <span class="key">focus</span>      = <span class="str">"agentic systems, LLM evaluation, prod backend"</span><br/>
     <span class="key">leadership</span> = <span class="str">"McKinsey Forward Alumni · 2026"</span><br/>
     <span class="key">obsession</span>  = <span class="str">"the almost-correct outputs. that's where it gets interesting."</span><br/>
@@ -532,10 +536,9 @@
   <h2 class="section-title reveal">Who I Am<span class="a1">.</span></h2>
   <div class="about-grid">
     <div class="about-text reveal">
-      <p>I'm <strong>Kunal Aggarwal</strong>, a final-year CS undergrad at VIT (Vellore Institute of Technology) Bhopal who builds and evaluates language models professionally. Currently interning as a <strong>Backend AI Engineer at FlyRank AI</strong> and working as an <strong>AI Model Analyst at Deccan AI Experts</strong> — shipping production FastAPI services by day, hunting hallucinations by night.</p>
-      <p>I build AI things. Mostly I try to understand <strong>why they break.</strong> My focus is <strong>agentic AI systems</strong>, multi-step LLM pipelines, tool-calling agents, and retrieval-augmented generation — with real hands-on time in <strong>LangChain, LangGraph, smolagents, and Google ADK</strong>. I care about systems that actually work at scale, not just notebooks that run clean.</p>
-      <p>Outside core AI work: FastAPI backends, Next.js frontends, Docker containers, CI/CD on AWS EC2, blockchain credential systems. I also went through the <strong>McKinsey Forward Program</strong> in 2026 — structured problem-solving is a skill I use in debugging as much as in strategy.</p>
-      <div class="about-stats">
+      <p>I'm <strong>Kunal Aggarwal</strong>, a CS undergrad at Vellore Institute of Technology who has spent the last year shipping production AI systems across multiple roles. I interned as a <strong>Backend AI Engineer at FlyRank AI</strong>, building low-latency FastAPI services and LLM-powered pipelines on AWS EC2. Before that, I was a <strong>Software Engineer at Urlyte</strong>, optimising a high-throughput URL redirect service down to 63ms p99 latency. Alongside both, I freelance as an <strong>AI Model Analyst at Deccan AI Experts</strong>, running RLHF cycles and LLM evaluation across Python and SQL codebases.</p>
+      <p>My focus is <strong>agentic AI systems</strong>: multi-step LLM pipelines, tool-calling agents, and retrieval-augmented generation. I have real hands-on time in <strong>LangChain, LangGraph, smolagents, and Google ADK</strong> and I care about systems that hold up in production, not just notebooks that run clean. I tend to go deep, understanding why a model breaks is more interesting to me than patching the output.</p>
+      <p>Outside AI work, I build full-stack products with FastAPI, Next.js, Docker, and PostgreSQL, and have a background in blockchain systems and quantitative finance. I am also a <strong>McKinsey Forward Program alumnus</strong>; structured problem-solving is a skill I use in debugging as much as in strategy.<div class="about-stats">
         <div class="stat-card reveal">
           <div class="stat-num a1">3+</div>
           <div class="stat-label">internships held</div>
@@ -586,7 +589,7 @@
     <div class="exp-card reveal">
       <div class="exp-header">
         <div class="exp-company">FlyRank AI</div>
-        <div class="exp-period">Jul 2026 - Present</div>
+        <div class="exp-period">Jul 2026 - Oct 2026</div>
       </div>
       <div class="exp-role">Backend AI Engineering Intern · Remote</div>
       <ul class="exp-bullets">
@@ -619,9 +622,9 @@
     <div class="exp-card c3 reveal" style="transition-delay:0.14s">
       <div class="exp-header">
         <div class="exp-company">Deccan AI Experts</div>
-        <div class="exp-period">Mar 2026 - Present</div>
+        
       </div>
-      <div class="exp-role">AI Model Analyst &amp; Trainer · Remote, Part-time</div>
+      <div class="exp-role">AI Model Analyst &amp; Trainer · Freelance, Remote</div>
       <ul class="exp-bullets">
         <li>Conducted 30+ RLHF comparative preference annotations evaluating LLM outputs on correctness, factual grounding, and safety; labels used directly in downstream fine-tuning pipelines.</li>
         <li>Achieved a <strong style="color:var(--text)">96% task approval rate</strong> across 26 structured debugging submissions; diagnosed model failure modes including hallucinations and reasoning gaps in Python and SQL outputs.</li>
@@ -765,9 +768,9 @@
     <div class="edu-icon">🎓</div>
     <div>
       <div class="edu-degree">B.Tech in Computer Science and Engineering</div>
-      <div class="edu-school">Vellore Institute of Technology (VIT) Bhopal</div>
+      <div class="edu-school">Vellore Institute of Technology</div>
       <div class="edu-meta">
-        <span>📍 Sehore, Madhya Pradesh</span>
+        
         <span>📅 2023 - 2027</span>
         <span style="color:var(--accent1)">CGPA: 8.5 / 10</span>
         <span style="color:var(--accent4)">Class of 2027</span>
@@ -899,7 +902,7 @@
       <div class="form-group"><label for="subject">subject</label><input type="text" id="subject" placeholder="Internship opportunity / Collaboration / etc."/></div>
       <div class="form-group"><label for="message">message</label><textarea id="message" placeholder="Tell me about the role, project, or just say hi."></textarea></div>
       <button class="form-submit" onclick="handleSubmit()">send_message()</button>
-      <p class="form-note">Opens your email client; no server needed.</p>
+      <p class="form-note">Message sends directly, no email client needed.</p>
     </div>
   </div>
 </section>
@@ -952,9 +955,31 @@
       if (!name) f.push('name'); if (!email) f.push('email'); if (!message) f.push('message');
       showToast('Please fill in: ' + f.join(', '), '#d4547a'); return;
     }
-    const body = `Hi Kunal,\n\nName: ${name}\nEmail: ${email}\n\n${message}`;
-    window.location.href = `mailto:kunal.aggarwal.office@gmail.com?subject=${encodeURIComponent(subject||'Portfolio Inquiry')}&body=${encodeURIComponent(body)}`;
-    showToast('Opening email client...', 'var(--accent1)');
+    const btn = document.querySelector('.form-submit');
+    btn.textContent = 'sending...';
+    btn.disabled = true;
+    const now = new Date();
+    const time = now.toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' });
+    emailjs.send('service_0qoyl5h', 'template_ew915og', {
+      name: name,
+      email: email,
+      subject: subject || 'Portfolio Inquiry',
+      message: message,
+      time: time
+    }).then(() => {
+      showToast('Message sent successfully!', 'var(--accent1)');
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('subject').value = '';
+      document.getElementById('message').value = '';
+      btn.textContent = 'send_message()';
+      btn.disabled = false;
+    }).catch((err) => {
+      console.error('EmailJS error:', err);
+      showToast('Something went wrong. Try emailing directly.', '#d4547a');
+      btn.textContent = 'send_message()';
+      btn.disabled = false;
+    });
   }
 
   function showToast(msg, color) {
